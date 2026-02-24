@@ -1,0 +1,8 @@
+javascript is cross platform, object based scrirpt language for client and server application and it is used every whwere.
+loosly typed language
+INTERPRETED at just in time compliation.
+high level and multi-paradigm.
+can be embeded with html and css.
+
+                                JS FEATURRES
+paltform independent 
