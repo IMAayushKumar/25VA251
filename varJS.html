@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varJS</title>
+</head>
+<body>
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum laboriosam pariatur, similique modi, exercitationem placeat quasi consectetur dolorem consequatur quas rerum.</P>
+    <script>// primitive-single value varibles which are immutable.
+//string,name,boolean,undefined,null,bigint,symbol.
+var myName="aauysh kumar ";
+console.log(myName);
+console.log(typeof(myName));
+
+//number
+var number=1234567;
+console.log("mobile number is:" +number);
+console.log(typeof(number))
+
+//boolean
+var isMarried=false;
+console.log(isMarried);
+console.log(typeof(isMarried));
+//bigint
+
+var myValue=123456789076543;
+console.log(BigInt(myValue));
+console.log(typeof(myValue));
+
+var name1=Symbol("kamla");
+var name2=Symbol("sachin");
+console.log(name1=name2); 
+
+//function is reusable block of code used to perform specific task.
+function cal(){
+var n1=123;
+var n2=23;
+var result=n1+n2;
+console.log("addition of n1 and n2 is:"+result);
+console.log(typeof(cal()));
+</script>
+    
+</body>
+</html>
