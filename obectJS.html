@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects IN JS</title>
+</head>
+<body>
+    <script>
+        // objects in JS are the collection of keys and vlaues.
+        //creating an objects usong litral way.
+     let student={
+        name:"aayush",
+        Age:18,
+        isMarried:false,
+        address:{},
+        Course:"Btech",
+        Branch:"CSE",
+        year:2026,
+        getInfo:function(){
+            return "my education details is"+student.Branch+" "+student.Course
+        },
+        subjects:["Maths","Physics","English","Chemistry"],
+        ExamDone:"null",
+     }
+     // Accessing objects and keys and objects 
+     console.log(student);
+     console.log(student.getInfo());
+     console.log(student.subjects[2]);
+     console.log(typeof(student));
+     // length of keys 
+     let keysLength=Object.keys(student);
+     console.log(keysLength.length);
+     for (let i = 0; i < keysLength.length; i++) {
+        const element = keysLength[i];
+        console.log(element);
+        
+        
+     }
+     // create an object using new keywords
+     let myinfo= new objects;
+     
+     
+    </script>
+    
+</body>
+</html>
