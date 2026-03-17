@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+</body>
+<script>
+    // function are the reussable block of code used to perform specific task.
+    //type of function -with parameter, without parameter and no default parameter.
+    // normal function without parameter
+
+    function demo(){
+        console.log("helllo JS");   
+    }
+    demo(); //function calling
+
+    // function with paramerter
+    function demo1(text){
+        console.log("hello"+ text);   
+    }
+    demo1("react");
+    // function with default parameter
+    function add(a,b){
+        var num1=a;
+        var num2=b;
+        var res=num1+num2;
+        console.log("addition of a and b is:" + res);
+    }
+    add(2,4)
+    /// JavaScript is fundamentally a synchronous and single-threaded language, meaning code is executed sequentially, one line at a time
+    function cal() {
+        function add(a,b) {
+            console.log("addition is:"+ (a+b)); 
+        }
+        function sub(p,q) {
+            console.log("subtration is:"+(p-q)); 
+        }
+        function mul(x,y) {
+            console.log("multiplication is:"+ (x*y));   
+        }
+    mul(9,4);
+    add(2,5);
+    sub(5,7); 
+        
+    }
+    cal();
+    // anonomynous function
+    let msg= function () {
+        console.log("hello world");
+        
+        
+    }
+    msg();
+    // short code of above function
+    let msg1=()=>console.log("hello React"); // single ine
+    msg1();
+    let msg2=(age)=>{
+        if(age>18){
+            console.log("valid age");    
+        }
+        
+    }
+    msg2(23);
+
+    // callback function
+    function calc(a,b,callback) {
+        var num1=a;
+        console.log("first number is:"+num1);
+        var num2=b;
+        console.log("second number is:"+num2);
+        var res=num1+num2;
+        callback(res);
+
+        
+    }
+    function display(res){
+        console.log("result is"+res);
+        
+
+    }
+    calc(23,4,demo1);
+    display(56,2);
+    // callbck usin set timeout API
+    function greeting(){
+        document.writeln("Hello World");
+    }
+    function loading(){
+        document.writeln("data loading .............");   
+        }
+        loading();
+        setTimeout(greeting,2000);
+        //call back hell
+       // pending-opration started
+       //fulfilled-opration completed
+       //rejected-opration failed
+       let Promise=new Promise(function(resolve,reject){
+           let umr=23;
+        if(umr>18){
+            resolve("Valid Age")
+       reject("Wait for next year")
+};
+
+       });
+       promise.then(result=>console.log(result).catch
+       (error=>console.log(error)));
+       
+ /// 
+ async function userData() {
+    let userResponse=await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    let userDatares=await userResponse.json();
+    console.log(userDatares);}
+    userData(); 
+
+    async function productDetails() {
+    let prores=await fetch('https://jsonplaceholder.typicode.com/todos/1'); 
+    let proresData=await prores.json();
+    }
+    catch(error){
+        console.log("NOt valid");
+        
+    }
+    ]
+    
+    
+ 
+        
+    
+    
+</script>
+</html>
